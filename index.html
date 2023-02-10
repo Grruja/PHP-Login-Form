@@ -7,7 +7,10 @@
 </head>
 <body class="bg-dark">
 
-	<form class="container d-flex flex-column gap-4 bg-light p-5 rounded-4">
+	<form class="container d-flex flex-column gap-4 bg-light p-5 rounded-4"
+			method="POST"
+			action="home.php"
+	>
 		<h1>Sign in</h1>
 		<div class="form-floating">
 			<input class="form-control" id="name_last" type="text" name="name_last">
@@ -26,11 +29,11 @@
 			<label for="number">Number:</label>
 		</div>
 		<div class="form-floating">
-			<input class="form-control" id="password" type="text" name="password">
+			<input class="form-control" id="password" type="password" name="password">
 			<label for="password">Password:</label>
 		</div>
 		<div class="form-floating">
-			<input class="form-control" id="repeat_password" type="text" name="repeat_password">
+			<input class="form-control" id="repeat_password" type="password" name="repeat_password">
 			<label for="repeat_password">Repeat Password:</label>
 		</div>
 		<div>
